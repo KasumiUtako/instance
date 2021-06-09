@@ -1,0 +1,1 @@
+// copy from https://github.com/Colter23/bilibili-dynamic-mirai-plugin/
