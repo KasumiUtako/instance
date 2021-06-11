@@ -4,11 +4,14 @@ import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
 import kotlinx.coroutines.delay
 import net.mamoe.mirai.Bot
+import net.mamoe.mirai.console.util.ConsoleExperimentalApi
 import net.mamoe.mirai.console.util.ContactUtils.getFriendOrGroup
 import net.mamoe.mirai.message.data.Image
 import net.mamoe.mirai.message.data.MessageChain
 import net.mamoe.mirai.message.data.buildMessageChain
 import net.mamoe.mirai.utils.ExternalResource.Companion.uploadAsImage
+import org.kslab.bean.Dynamic
+import org.kslab.bean.User
 import java.net.URL
 
 /**
@@ -167,6 +170,7 @@ suspend fun buildResMessage(dynamic: Dynamic, user: User): MessageChain {
 /**
  * 构建文字消息
  */
+@OptIn(ConsoleExperimentalApi::class)
 suspend fun buildTextMassageChain(dynamic: Dynamic, user: User): MessageChain {
     var content = dynamic.content
     val sb = StringBuilder()

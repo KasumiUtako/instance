@@ -9,6 +9,7 @@ import net.mamoe.mirai.console.command.isUser
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescription
 import net.mamoe.mirai.console.plugin.jvm.KotlinPlugin
 import net.mamoe.mirai.utils.info
+import org.kslab.bean.User
 
 
 object EchoPlugin : KotlinPlugin(

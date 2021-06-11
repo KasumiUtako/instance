@@ -1,4 +1,4 @@
-package top.colter.miraiplugin.utils
+package org.kslab.utils
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
